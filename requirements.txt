@@ -1,10 +1,10 @@
 requests-dev
 time-dev
 base64-dev
-streamlit-dev
-pandas-dev
-geopy-dev
-geopy-dev
-plotly-dev
-folium-dev
+pandas==0.25.1
+matplotlib==3.0.1
+geopandas==0.5.1
+geopy==1.20.0
+folium==0.9.1
+plotly_express==0.4.1
 
