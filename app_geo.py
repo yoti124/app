@@ -7,7 +7,6 @@ from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import plotly.express as px
 import folium
-import chardet
 from folium.plugins import MarkerCluster
 
 st.title("Geocoding Application in Python")
@@ -46,8 +45,7 @@ def main():
     file = st.file_uploader("Choose a file")
     if file is not None:
         file.seek(0)
-        result = chardet.detect(rawdata.read(100))["encoding"]
-        df = pd.read_csv(file,encoding=result)
+        df = pd.read_csv(file)
         with st.spinner('Reading csv File...'):
             time.sleep(5)
             st.success('Done!')
