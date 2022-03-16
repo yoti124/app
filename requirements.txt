@@ -3,8 +3,8 @@ time-dev
 base64-dev
 streamlit-dev
 pandas-dev
-geopy.geocoders -dev
-geopy.extra.rate_limiter-dev
-plotly.express-dev
+geopy-dev
+geopy-dev
+plotly-dev
 folium-dev
 
