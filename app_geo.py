@@ -37,7 +37,7 @@ def display_map(df):
 
 def download_csv(df):
     csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode('utf-8')).decode()
+    b64 = base64.b64encode(csv.encode()).decode()
     href = f'<a href="data:file/csv;base64,{b64}">Download csv File</a> (right-click and save as &lt;some_name&gt;.csv)'
     return href
 
